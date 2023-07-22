@@ -7,7 +7,7 @@ int pivotElement(int size, int arr[]){
     int mid = start + (end-start)/2;
     while (start<end)
     {
-        if (arr[mid]>arr[0]){
+        if (arr[mid]>=arr[0]){
             start = mid+1;
         }
         else
@@ -39,8 +39,8 @@ int binarySearch(int arr[], int s, int e, int key){
 }
 
 int main(){
-    int arr[5] = {7,9,1,2,3};
-    int size = 5;
+    int arr[2] = {3,1};
+    int size = 2;
     int key;
     int ans;
     cout << "Enter the number you want to find in an  array: ";
